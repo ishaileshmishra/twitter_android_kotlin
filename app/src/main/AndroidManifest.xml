@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
-        <activity android:name=".ui.SendOTPActivity"></activity>
-        <activity android:name=".ui.LoginActivity" />
-        <activity android:name=".ui.OnBoardActivity" />
-        <activity android:name=".ui.SplashActivity">
+        <activity
+            android:name=".view.ui.MainActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/title_activity_main"/>
+        <activity android:name=".view.ui.UserLoginActivity" />
+        <activity android:name=".view.ui.SendOTPActivity" />
+        <activity android:name=".view.ui.UserRegistrationActivity" />
+        <activity android:name=".view.ui.OnBoardActivity" />
+        <activity android:name=".view.ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

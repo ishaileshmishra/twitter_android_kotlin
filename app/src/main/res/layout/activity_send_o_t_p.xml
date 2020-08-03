@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SendOTPActivity">
+    tools:context=".view.ui.SendOTPActivity">
+
+    <include layout="@layout/actionbar" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -53,5 +55,11 @@
     </ScrollView>
 
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>

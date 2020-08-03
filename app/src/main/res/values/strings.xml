@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">TheTwitter</string>
+    <string name="app_name">Nest.js</string>
     <string name="tagline">See what\'s\nhappening in the\nworld right now.</string>
     <string name="create_account">Create Account</string>
-    <string name="have_an_account">Have an account already? Log in</string>
+    <string name="have_an_account">Have an account already?</string>
+    <string name="log_in_to_nest_js">Log in to Nest.js</string>
+    <string name="phone_number_email_address_or_username">Phone number, email address or username</string>
+    <string name="password">Password</string>
+    <string name="forgotten_your_password">Forgotten your password?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_message">Message</string>
 </resources>

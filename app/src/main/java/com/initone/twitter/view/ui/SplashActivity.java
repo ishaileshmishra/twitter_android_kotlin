@@ -1,4 +1,4 @@
-package com.initone.twitter.ui;
+package com.initone.twitter.view.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 

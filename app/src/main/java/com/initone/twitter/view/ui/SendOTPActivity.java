@@ -1,8 +1,11 @@
-package com.initone.twitter.ui;
+package com.initone.twitter.view.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.initone.twitter.R;
@@ -31,6 +34,14 @@ public class SendOTPActivity extends AppCompatActivity {
             public void onOTPComplete(String otp) {
                 // fired when user has entered the OTP fully.
                 Toast.makeText(SendOTPActivity.this, "The OTP is " + otp,  Toast.LENGTH_SHORT).show();
+                final ProgressBar progressBar = findViewById(R.id.progressBar);
+                progressBar.setVisibility(View.VISIBLE);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        progressBar.setVisibility(View.GONE);
+                    }
+                }, 2000);
             }
         });
     }

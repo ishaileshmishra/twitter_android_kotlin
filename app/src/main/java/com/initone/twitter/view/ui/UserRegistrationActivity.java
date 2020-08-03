@@ -1,4 +1,4 @@
-package com.initone.twitter.ui;
+package com.initone.twitter.view.ui;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,12 +19,12 @@ import com.initone.twitter.R;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class LoginActivity extends AppCompatActivity {
+public class UserRegistrationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_registration);
 
         setupUI();
     }
@@ -44,7 +44,6 @@ public class LoginActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                // TODO Auto-generated method stub
                 myCalendar.set(Calendar.YEAR, year);
                 myCalendar.set(Calendar.MONTH, monthOfYear);
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
@@ -55,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         etDOB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new DatePickerDialog(LoginActivity.this, date, myCalendar
+                new DatePickerDialog(UserRegistrationActivity.this, date, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
@@ -65,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, SendOTPActivity.class);
+                Intent intent = new Intent(UserRegistrationActivity.this, SendOTPActivity.class);
                 startActivity(intent);
             }
         });
