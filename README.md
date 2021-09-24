@@ -1,2 +1,10 @@
-# TheTwitter
-The sample github application
+
+# twitter ui in android kotlin
+
+
+Getting started: 
+
+
+
+Screenshots:
+
